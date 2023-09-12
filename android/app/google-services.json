@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "841318813415",
+    "project_id": "salesapp-353fb",
+    "storage_bucket": "salesapp-353fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841318813415:android:dec74fe334640e515e5c42",
+        "android_client_info": {
+          "package_name": "com.example.sales_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQeiPIdpXkbf9oPijPX5kDzbOEs-hI_-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841318813415:android:2e7c7d9958b1836e5e5c42",
+        "android_client_info": {
+          "package_name": "com.example.skripsi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQeiPIdpXkbf9oPijPX5kDzbOEs-hI_-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
