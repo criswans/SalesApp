@@ -1,9 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:sales_app/main.dart';
 import 'package:sales_app/profile.dart';
 import 'package:sales_app/register.dart';
 import 'package:sales_app/validator.dart';
+import 'package:sales_app/visit_page.dart';
 
 import 'firebase_auth.dart';
 
@@ -32,8 +34,7 @@ class _LoginPageState extends State<LoginPage> {
     if (user != null) {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => ProfilePage(
-            user: user,
+          builder: (context) => VisitPage(
           ),
         ),
       );
@@ -145,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
                                             .pushReplacement(
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                ProfilePage(user: user),
+                                                ProfilePage(),
                                           ),
                                         );
                                       }

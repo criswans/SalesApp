@@ -1,5 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:sales_app/home.dart';
+import 'package:sales_app/product_page.dart';
+import 'package:sales_app/profile.dart';
+import 'package:sales_app/visit_page.dart';
 
+import 'customer_page.dart';
 import 'login.dart';
 
 
@@ -8,10 +14,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
+  MyApp({super.key,});
+
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Authentication',
+      routes: {
+        //"/": (_) => MyApp(),
+        "/visitPage": (BuildContext context) => VisitPage(),
+        "/profilePage": (BuildContext context) => ProfilePage(),
+        "/customerPage": (BuildContext context) => CustomerPage(),
+        "/productPage": (BuildContext context) => ProductPage(),
+        "/loginPage" : (BuildContext context) => LoginPage()
+      },
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.light,

@@ -129,7 +129,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                         .pushAndRemoveUntil(
                                       MaterialPageRoute(
                                         builder: (context) =>
-                                            ProfilePage(user: user),
+                                            ProfilePage(),
                                       ),
                                       ModalRoute.withName('/'),
                                     );
